@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Submit Task</title>
+    <style>
+        body {
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            /* Add any other background styles here */
+        }
+        /* Center the content horizontally and vertically */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Create the square with a black border */
+        .task-submission {
+            width: 300px;
+            height: 300px;
+            padding: 20px; /* Add padding to space the form from the border */
+            text-align: center; /* Center text horizontally */
+            background-color:  #48c9b0;
+        }
+
+        /* Left-align labels */
+        .task-submission label {
+            text-align: left;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        /* Add any other custom styles as needed */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>APMS</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"><b>HOME</b></a></li>
+                <li><a href="projects.html"><b>PROJECTS</b></a></li>
+                <li><a href="tasks.html"><b>TASKS</b></a></li>
+                <li><a href="about.html"><b>ABOUT</b></a></li>
+                <li><a href="login.html"><b>LOGIN</b></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="task-submission">
+                <h2><b>SUBMIT TASK</b></h2>
+                
+                <form action="submit_task.php" method="post" enctype="multipart/form-data">
+                    <label for="taskName">Task Name:</label>
+                    <input type="text"   id="Task Name"/>
+                    <br>
+                    <br>
+                    <label for="pdfFile">Upload PDF File:</label>
+                    <input type="file" name="pdfFile" id="pdfFile" accept=".pdf" required>
+                    <br>
+                    <br>
+                    <input type="submit" class="btn" value="Submit">
+                </form>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

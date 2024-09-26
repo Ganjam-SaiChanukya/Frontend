@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>facukty details</title>
+    <style>
+        /* Apply the background image to the body */
+        body {
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            /* Add any other background styles here */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>APMS</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"><b>HOME</b></a></li>
+                <li><a href="projects.html"><b>PROJECTS</b></a></li>
+                <li><a href="tasks.html"><b>TASKS</b></a></li>
+                <li><a href="about.html"><b>ABOUT</b></a></li>
+                <li><a href="login.html"><b>LOGIN</b></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="student-submissions">
+            <!-- Display a list of student submissions in a centered table -->
+            <table><center>
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Project Name</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Chanukya</td>
+                        <td>Project 1</td>
+                        <td><button class="btn" onclick="openMarksPage('Chanukya', 'Project 1')">Grade</button></td>
+                    </tr>
+                    <tr>
+                        <td>Harinath</td>
+                        <td>Project 2</td>
+                        <td><button class="btn" onclick="openMarksPage('Harinath', 'Project 2')">Grade</button></td>
+                    </tr>
+                    <tr>
+                        <td>Rakesh</td>
+                        <td>Project 3</td>
+                        <td><button class="btn" onclick="openMarksPage('Rakesh', 'Project 3')">Grade</button></td>
+                    </tr>
+                    <!-- Repeat the above structure for each student submission -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <!-- Add your footer here -->
+
+    <script>
+        function openMarksPage(studentName, projectName) {
+            // Redirect to "marks.html" with student name and project name as query parameters
+            window.location.href = `marks.html?student=${studentName}&project=${projectName}`;
+        }
+    </script>
+</body>
+</html>

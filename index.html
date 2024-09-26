@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Academic Project Management System</title>
+    <style>
+        /* Apply the background image to the body */
+        body {
+            background-image: url('bg.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            /* Add any other background styles here */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>APMS</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"><b>HOME</b></a></li>
+                <li><a href="projects.html"><b>PROJECTS</b></a></li>
+                <li><a href="tasks.html"><b>TASKS</b></a></li>
+                <li><a href="about.html"><b>ABOUT</b></a></li>
+                <li><a href="login.html"><b>LOGIN</b></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2><center>Welcome to Academic Project Management System</center></h2>
+
+        <center><img src="D:\3rd Year\ODD SEM\JFSD-Frontend-Files\APM.png" width="700" height="750"></center>
+        
+        <center><button id="learnMoreButton">Learn More</button></center>
+    
+    </main>
+
+    <script>
+        document.getElementById("learnMoreButton").addEventListener("click", function() {
+            window.location.href = "login.html";
+        });
+    </script>
+
+    <footer>
+        <p><center>&copy; 2023 Academic Project Management System</center></p>
+    </footer>
+</body>
+</html>
